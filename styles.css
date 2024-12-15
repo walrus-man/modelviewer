@@ -1,0 +1,199 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Ensure full width */
+  height: 100%; /* Ensure full height */
+  box-sizing: border-box; /* Includes padding/border in width/height calculations */
+}
+/* Navigation styles */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Hero section */
+.hero {
+  height: 500px;
+  background-image: url("path-to-hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Common styles */
+.intro-text {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid#333;
+  background-color: rgb(245, 245, 245);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.coin-item {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.coin-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .nav a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: 300px;
+    margin-top: 120px;
+  }
+
+  .intro-text {
+    padding: 1rem;
+  }
+
+  .section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .image-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .coin-item {
+    min-width: 100%;
+  }
+
+  .coin-item img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 200px;
+    margin-top: 150px;
+  }
+
+  .intro-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .coin-item p {
+    font-size: 0.9rem;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem;
+  }
+}
+
+model-viewer {
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+}
